@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- Luminara — a game by Xpain. © Xpain. All rights reserved. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#021a2c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="description"
+      content="Luminara — a 3D game about diving from the ocean surface to the bottom of Challenger Deep. Made by Xpain."
+    />
+    <meta name="author" content="Xpain" />
+    <meta property="og:title" content="Luminara" />
+    <meta property="og:description" content="Dive from the ocean surface to the bottom of Challenger Deep. A game by Xpain." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Luminara — the dive</title>
+    <script type="module" crossorigin src="/assets/index--0rvgDMV.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/three-C5HKF9js.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-qIxZAzTf.css">
+  </head>
+  <body>
+    <canvas id="scene" aria-label="Underwater world"></canvas>
+    <div id="hud" hidden></div>
+
+    <main id="title">
+      <section class="hero">
+        <p class="kicker" data-i18n="title.kicker">Expedition / 10,900 metres down</p>
+        <h1 aria-label="Luminara">
+          <span style="--i: 0">L</span><span style="--i: 1">U</span><span style="--i: 2">M</span><span style="--i: 3">I</span><span style="--i: 4">N</span><span style="--i: 5">A</span><span style="--i: 6">R</span><span style="--i: 7">A</span>
+        </h1>
+        <nav id="main-menu" class="menu" aria-label="Main menu"></nav>
+        <a class="maker" href="#" aria-label="Made by Xpain" onclick="return false">
+          <img src="/xpain-mark.svg" alt="" width="28" height="28" />
+          <span><span data-i18n="title.madeBy">Made by</span> <b>Xpain</b></span>
+        </a>
+      </section>
+    </main>
+
+    <div id="pause" class="overlay" hidden>
+      <div class="panel pause-panel">
+        <p class="kicker" data-i18n="pause.title">Paused</p>
+        <nav id="pause-menu" class="menu" aria-label="Pause menu"></nav>
+      </div>
+    </div>
+
+    <div id="fatal" class="overlay" hidden>
+      <div class="panel">
+        <p class="kicker" data-i18n="fatal.title">WebGL 2 required</p>
+        <p data-i18n="fatal.text">Your browser could not start 3D graphics. Open the game in an up-to-date Chrome, Edge, Firefox or Safari and make sure hardware acceleration is on.</p>
+      </div>
+    </div>
+
+  </body>
+</html>
